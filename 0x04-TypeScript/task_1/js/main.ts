@@ -30,3 +30,13 @@ const teacher3: Teacher = {
   }
 
   console.log(director1);
+
+  interface printTeacher {
+    (firstName: string, lastName: string): string;
+  }
+
+  const printTeacherFunction: printTeacher = (firstName: string, lastName: string): string => {
+    return `${firstName[0]}. ${lastName}`;
+  }
+
+    console.log(printTeacherFunction(director1.firstName, director1.lastName));
