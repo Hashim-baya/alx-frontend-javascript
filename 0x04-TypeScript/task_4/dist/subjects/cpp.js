@@ -1,3 +1,4 @@
+/// <reference path="./index.ts" />
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -15,24 +16,22 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var Subjects;
 (function (Subjects) {
-    var Java = /** @class */ (function (_super) {
-        __extends(Java, _super);
-        function Java() {
+    var Cpp = /** @class */ (function (_super) {
+        __extends(Cpp, _super);
+        function Cpp() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        Java.prototype.getRequirements = function () {
-            return 'Here is the list of requirements for Java';
+        Cpp.prototype.getRequirements = function () {
+            return 'Here is the list of requirements for Cpp';
         };
-        Java.prototype.getAvailableTeacher = function (teacher) {
-            if (teacher.experienceTeachingJava === undefined || teacher.experienceTeachingJava <= 0) {
+        Cpp.prototype.getAvailableTeacher = function () {
+            if (this.teacher.experienceTeachingCpp === undefined || this.teacher.experienceTeachingCpp <= 0) {
                 return 'No available teacher';
             }
-            else {
-                return "Available Teacher: ".concat(teacher.firstName);
-            }
+            return "Available Teacher: ".concat(this.teacher.firstName);
         };
-        return Java;
+        return Cpp;
     }(Subjects.Subject));
-    Subjects.Java = Java;
+    Subjects.Cpp = Cpp;
 })(Subjects || (Subjects = {}));
-//# sourceMappingURL=Java.js.map
+//# sourceMappingURL=Cpp.js.map

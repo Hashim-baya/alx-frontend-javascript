@@ -1,3 +1,4 @@
+/// <reference path="./index.ts" />
 var Subjects;
 (function (Subjects) {
     var React = /** @class */ (function () {

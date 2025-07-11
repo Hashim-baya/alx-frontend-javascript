@@ -1,3 +1,4 @@
+/// <reference path="./index.ts" />
 namespace Subjects {
 
     export interface Teacher {
@@ -10,9 +11,7 @@ namespace Subjects {
         lastName: string;
         teacher: Teacher;
 
-        constructor(teacher: Teacher) {
-            this.teacher = teacher;
-        }
+       
         getRequirements(): string {
             return 'Here is the list of requirements for React';
         }

@@ -31,5 +31,6 @@ var Subjects;
         };
         return Cpp;
     }(Subjects.Subject));
+    Subjects.Cpp = Cpp;
 })(Subjects || (Subjects = {}));
 //# sourceMappingURL=Cpp.js.map

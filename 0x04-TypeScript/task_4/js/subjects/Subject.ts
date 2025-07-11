@@ -1,3 +1,4 @@
+/// <reference path='./index.ts' />
 namespace Subjects {
     export class Subject  {
         teacher: Teacher;
