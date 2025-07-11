@@ -50,4 +50,14 @@ function isDirector(employee) {
 }
 console.log(executeWork(createEmployee(200))); // Getting to work
 console.log(executeWork(createEmployee(1000))); // Getting to director tasks
+function teachClass(todayClass) {
+    if (todayClass === 'Math') {
+        return 'Teaching Math';
+    }
+    else {
+        return 'Teaching History';
+    }
+}
+console.log(teachClass('Math')); // Teaching Math
+console.log(teachClass('History')); // Teaching History
 //# sourceMappingURL=main.js.map
